@@ -1,0 +1,100 @@
+<div class="main-wrapper">
+  <h1>Your Shopping Basket</h1>
+  <p>Please review the contents of your basket and click "checkout securely now" when you are happy to proceed.</p>
+  <table class="basket-table">
+    <thead class="panel-head">
+    <tr>
+      <th class="description">
+        Items
+      </th>
+      <th class="price">
+        Price
+      </th>
+      <th class="quantity">
+        Qty
+      </th>
+      <th class="subtotal">
+        Subtotal
+      </th>
+      <th class="remove">
+        &nbsp;
+      </th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr class="product-item">
+      <td class="description">
+        <div class="container">
+          <div class="product-photo">
+            <img src="../../../assets/p1-1.jpg">
+          </div>
+          <div>
+            <p class="product-name">Roxy Women's Jetty Block Snow Jacket</p>
+            <p class="availability">In stock | Usually dispatched within 24 hours </p>
+          </div>
+        </div>
+      </td>
+      <td class="price">$145</td>
+      <td class="quantity">
+        <ui-qt-input [ngModel]="1"></ui-qt-input>
+      </td>
+      <td class="subtotal">$145</td>
+      <td class="remove">
+        x
+      </td>
+    </tr>
+    <tr class="product-item">
+      <td class="description">
+        <div class="container">
+          <div class="product-photo">
+            <img src="../../../assets/p4-1.jpg">
+          </div>
+          <div>
+            <p class="product-name">Burton Women's Expedition 1/4 Zip Base Layer Top</p>
+            <p class="availability">In stock | Usually dispatched within 24 hours </p>
+          </div>
+        </div>
+      </td>
+      <td class="price">$55</td>
+      <td class="quantity">
+        <ui-qt-input [ngModel]="2"></ui-qt-input>
+      </td>
+      <td class="subtotal">$110</td>
+      <td class="remove">
+        x
+      </td>
+    </tr>
+    <tr class="product-item">
+      <td class="description">
+        <div class="container">
+          <div class="product-photo">
+            <img src="../../../assets/p7-1.jpg">
+          </div>
+          <div>
+            <p class="product-name">Dylan by True Grit Women's Flannel & Sherpa Road Trip Vest</p>
+            <p class="availability">In stock | Usually dispatched within 24 hours </p>
+          </div>
+        </div>
+      </td>
+      <td class="price">$90</td>
+      <td class="quantity">
+        <ui-qt-input [ngModel]="1"></ui-qt-input>
+      </td>
+      <td class="subtotal">$90</td>
+      <td class="remove">
+        x
+      </td>
+    </tr>
+    </tbody>
+    <tfoot>
+    <tr>
+      <td class="total-label" colspan="3">Total:</td>
+      <td class="total-value">$345</td>
+      <td class="remaining"></td>
+    </tr>
+    </tfoot>
+  </table>
+  <div class="basket-button">
+    <button class="checkout" routerLink="../checkout">Checkout Securely Now</button>
+  </div>
+</div>
